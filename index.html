@@ -60,7 +60,7 @@
         <section class="primary">
             <div class="container primary-container">
                 <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="btn">Замовити послугу</button>
+                <button type="button" class="btn" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="feature">
@@ -90,13 +90,22 @@
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="list">
                     <li class="item">
-                        <img src="./images/img1.jpg" alt="Людина працює за ноутбуком" width="370" height="294">
+                        <div class="work-container">
+                            <img src="./images/img1.jpg" alt="Людина працює за ноутбуком" width="370" height="294">
+                            <p class="work-text">Десктопні додатки</p>
+                        </div>
                     </li>
                     <li class="item">
-                        <img src="./images/img2.jpg" alt="Людина с телефоном та ноутбуком" width="370" height="294">
+                        <div class="work-container">
+                            <img src="./images/img2.jpg" alt="Людина с телефоном та ноутбуком" width="370" height="294">
+                            <p class="work-text">Мобільні додатки</p>
+                        </div>
                     </li>
                     <li class="item">
-                        <img src="./images/img3.jpg" alt="Палітра" width="370" height="294">
+                        <div class="work-container">
+                            <img src="./images/img3.jpg" alt="Палітра" width="370" height="294">
+                            <p class="work-text">Дизайнерські рішення</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -318,10 +327,10 @@
                             <a href="https://goo.gl/maps/8fatFaNchkYs84Wi7" target="_blank" rel="noopenner nofollow" class="adress-link link">м. Київ, пр-т Лесі Українки, 26</a>
                         </li>
                         <li class="adress-item">
-                            <a href="mailto:info@example.com" class="adress-link link">info@example.com</a>
+                            <a href="mailto:info@example.com" class="adress-link link color">info@example.com</a>
                         </li>
                         <li class="adress-item">
-                            <a href="tel:+380991111111" class="adress-link link">+38 099 111 11 11</a>
+                            <a href="tel:+380991111111" class="adress-link link color">+38 099 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -331,28 +340,28 @@
                 <ul class="footer-icon-list list">
                     <li class="footer-icon-item item">
                         <a href="" class="footer-icon-link link">
-                            <svg class="footer-icon" width="20" heignt="20">
+                            <svg class="footer-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-icon-item item">
                         <a href="" class="footer-icon-link link">
-                            <svg class="footer-icon" width="20" heignt="20">
+                            <svg class="footer-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-icon-item item">
                         <a href="" class="footer-icon-link link">
-                            <svg class="footer-icon" width="20" heignt="20">
+                            <svg class="footer-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-icon-item item">
                         <a href="" class="footer-icon-link link">
-                            <svg class="footer-icon" width="20" heignt="20">
+                            <svg class="footer-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -361,6 +370,16 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" data-modal-close>
+                <svg class="modal-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
     </body>
     </html>
     
